@@ -12,16 +12,17 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: 'Fira Code', monospace;
+  padding: 0 10%;
 }
 
 main {
+  position: fixed;
   height: 80%;
   width: 80%;
   background-color: rgba(250, 250, 250, 0.06);
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 60px;
+  padding: 0 10%;
 }
 
 h1 {
@@ -82,8 +83,7 @@ h2 {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  height: 40%;
+  padding: 20px 0 120px 20px;
   border: 2px solid rgba(50, 50, 50, 1);
   background-color: rgba(50, 50, 50, 1);
   display: flex;
@@ -93,15 +93,18 @@ h2 {
 
 p {
   color: #fff;
-  margin: 15px;
   padding: 0;
   position: absolute;
-  width: 80%;
   font-weight: 700;
 }
 
-.error {
-  font-size: 20px;
-  color: rgb(234, 53, 53);
-  font-weight: 700;
+@media screen and (max-width: 1000px){
+  .input-div {
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 30px;
+  }
 }
